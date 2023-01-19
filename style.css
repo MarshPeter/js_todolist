@@ -1,0 +1,35 @@
+* {
+    border: 1px solid black;
+    font-family: sans-serif;
+    margin: 15px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+input {
+    width: 500px;
+    height: 25px;
+}
+
+button {
+    width: 100px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+button:hover {
+    width: 110px;
+    margin-left: 0px;
+    cursor: pointer;
+}
+
+body {
+    display: grid;
+    background-color: #ffffff;
+}
