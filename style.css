@@ -1,5 +1,4 @@
 * {
-    border: 1px solid black;
     font-family: sans-serif;
     margin: 15px;
 }
@@ -36,6 +35,8 @@ body {
 
 .task {
     background-color: #efefef;
+    display: grid;
+    grid-template-columns: 80% 10% 10%;
 }
 
 .complete {

@@ -1,24 +1,12 @@
-function commit_task() {
+function commit_task(text) {
+    const wrapper = document.querySelector(".task_list");
     const div = document.createElement("div");
-    const label = document.createElement("label")
-    const text = document.createTextNode("This is a task");
-    const conf_button = document.createElement("button");
-    const conf_text = document.createTextNode("Completed");
-    const remove_button = document.createElement("button");
-    const remove_text = document.createTextNode("Remove Task");
-    conf_button.className = "complete";
-    conf_button.onclick = "temp()";
-    conf_button.appendChild(conf_text);
-    remove_button.className = "remove";
-    remove_button.appendChild(remove_text);
-
     div.className = "task";
-    div.appendChild(label);
-    label.appendChild(text);
-    div.appendChild(conf_button);
-    div.appendChild(remove_button);
 
-    const wrapper = document.getElementsByClassName("task_list")[0];
+    create_label(div, text)
+    complete_button_creator(div);
+    remove_button_creator(div);
+
     wrapper.appendChild(div);
 };
 
@@ -32,4 +20,42 @@ function add_task() {
     }
 
     new_item.value = "";
+};
+
+function create_label(div, task_text) {
+    const label = document.createElement("label");
+    const text = document.createTextNode(task_text);
+
+    label.className = 'task_entry';
+
+    div.appendChild(label);
+    label.appendChild(text);
+};
+
+function complete_button_creator(div) {
+    const button = document.createElement("button");
+    button.className = "complete";
+
+    const conf_text = document.createTextNode("Completed");
+    button.appendChild(conf_text);
+
+    div.appendChild(button);
+
+    button.addEventListener('click', () => {
+        div.style.backgroundColor = 'green';
+    });
+};
+
+function remove_button_creator(div) {
+    const button = document.createElement("button");
+    button.className = "remove";
+    
+    const remove_text = document.createTextNode("Remove Task");
+    button.appendChild(remove_text);
+
+    div.appendChild(button);
+
+    button.addEventListener('click', () => {
+        div.remove()
+    });
 };
