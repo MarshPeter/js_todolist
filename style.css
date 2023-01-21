@@ -23,7 +23,7 @@ button {
     margin-left: 10px;
 }
 
-button:hover {
+submit:hover {
     width: 110px;
     margin-left: 0px;
     cursor: pointer;
@@ -32,4 +32,16 @@ button:hover {
 body {
     display: grid;
     background-color: #ffffff;
+}
+
+.task {
+    background-color: #efefef;
+}
+
+.complete {
+    background-color: green;
+}
+
+.remove {
+    background-color: red;
 }
