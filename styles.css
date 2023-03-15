@@ -1,0 +1,98 @@
+* {
+  margin: 1px;
+  background-color: #f0fafa;
+  color: #232323;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  padding: 30px;
+}
+
+header {
+  padding: 35px 0;
+}
+
+header h1 {
+  font-size: 48px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#addtask {
+  align-items: center;
+}
+
+#addtask h2 {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  padding: 10px 0;
+  font-size: 30px;
+}
+
+#addtask div {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 15px 0;
+}
+
+#addtask input {
+  width: 50%;
+  font-size: 30px;
+  height: 40px;
+  border-radius: 15px;
+}
+
+#addtask a {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #60a9a2;
+  font-size: 20px;
+}
+
+#addtask a:hover {
+  background-color: #a9a9a2;
+}
+
+.task {
+  display: flex;
+  width: 80%;
+  gap: 25px;
+  padding: 10px 0;
+  margin: auto;
+}
+
+.task p {
+  font-size: 30px;
+  width: 80%;
+  background-color: aqua;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.task a {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #ef3054;
+  font-size: 20px;
+}
+
+.task a:hover {
+  background-color: yellow;
+}
+
+.task a:visited {
+  color: black;
+}
